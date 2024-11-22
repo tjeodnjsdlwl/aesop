@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/splitting/dist/splitting.min.js"></script>
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="https://unpkg.com/lenis@1.1.10/dist/lenis.min.js"></script>
+  <script src="https://unpkg.com/lottie-web@latest/build/player/lottie.min.js"></script>
+  <script src="./assets/js/index.js" defer></script>
+</head>
+<body>
+  <!-- loading -->
+   <div class="loading">
+    <div class="loading__logo"></div>
+   </div>
+
+  <header id="header" class="header">
+    <div class="header__inner">
+      <div class="header__flex">
+        <div class="header__logo">
+          <h1 class="logo">
+            <a href="" class="logo__link">
+            <span class="blind">이솝</span>
+          </a>
+        </h1>
+        </div>
+        <div class="header__gnb">
+          <nav class="gnb">
+            <ul class="gnb__list">
+              <li class="gnb__item" data-img="./assets/images/gnb_img01.avif">
+                <a href="" class="gnb__link">신제품&추천제품</a>
+                <div class="depth02">
+                  <ul class="depth02__list">
+                    <li class="depth02__item depth02__item--title">신제품</li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">비레레 오 드 퍼퓸</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">엘레오스 아로마틱 핸드 밤</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">이매큘레이트 페이셜 토닉</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">프로텍티브 페이셜 로션 SPF50+</a>
+                    </li>
+                    <li class="depth02__item depth02__item--title">추천 제품</li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">제라늄 리프 바디 클렌저</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">올루스 아로마틱 룸 스프레이</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">테싯 오 드 퍼퓸</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">파슬리 씨드 안티 옥시던트 인텐스 세럼</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb__item" data-img="./assets/images/gnb_img02.avif">
+                <a href="" class="gnb__link">스킨케어</a>
+                <div class="depth02">
+                  <ul class="depth02__list">
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">스킨 케어 더 보기</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">페이셜 클렌저 & 각질 제거</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">트리트먼트 & 마스크</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">토너</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">하이드레이터 & 모이스처라이저</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">립 & 아이</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">쉐이빙</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">선 케어</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">스킨 케어 키트</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb__item" data-img="./assets/images/gnb_img03.avif">
+                <a href="" class="gnb__link">핸드&바디</a>
+                <div class="depth02">
+                  <ul class="depth02__list">
+                    <li class="depth02__item depth02__item--more">
+                      <a href="" class="depth02__link">핸드 & 바디 더 보기</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">핸드 워시 & 밤</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">바 솝</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">바디 클렌저 & 스크럽</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">바디 밤 & 오일</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">데오도란트</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb__item" data-img="./assets/images/gnb_img04.jpg">
+                <a href="" class="gnb__link">홈</a>
+                <div class="depth02">
+                  <ul class="depth02__list">
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">홈 더 보기</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">룸 스프레이</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">인센스</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">캔들</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">오일 버너 블렌드</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">디자인 오브제</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">탈취제 & 반려동물</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb__item" data-img="./assets/images/gnb_img05.avif">
+                <a href="" class="gnb__link">헤어</a>
+                <div class="depth02">
+                  <ul class="depth02__list">
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">헤어 더 보기</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">샴푸 & 컨디셔너</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">헤어 트리트먼트</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">그루밍</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb__item" data-img="./assets/images/gnb_img06.avif">
+                <a href="" class="gnb__link">향수</a>
+                <div class="depth02">
+                  <ul class="depth02__list">
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">향수 더 보기</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">플로럴</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">프레쉬</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">우디</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">오퓰런트</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="gnb__item" data-img="./assets/images/gnb_img07.jpg">
+                <a href="" class="gnb__link">키트&트래블</a>
+                <div class="depth02">
+                  <ul class="depth02__list">
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">키트 & 트래블 더 보기</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">시즈널 기프트 키트</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">스킨 케어 키트</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">핸드 & 바디 케어 키트</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">트래블</a>
+                    </li>
+                  </ul>
+
+                </div>
+              </li>
+              <li class="gnb__item" data-img="./assets/images/gnb_img08.avif">
+                <a href="" class="gnb__link">읽기</a>
+                <div class="depth02">
+                  <ul class="depth02__list">
+                    <li class="depth02__item depth02__item--title">더 아테네움</li>
+                    <li class="depth02__item"><a href="" class="depth02__link">모두보기</a></li>
+                    <li class="depth02__item depth02__item--title">회사 소개</li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">브랜드 스토리</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">채용</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">이솝 재단</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">문의하기</a>
+                    </li>
+                    <li class="depth02__item depth02__item--title">철학</li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">디자인</a>
+                    </li>
+                    <li class="depth02__item">
+                      <a href="" class="depth02__link">제품</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <div class="gnb__thumb">
+              <img src="" alt class="gnb__img">
+            </div>
+          </nav>
+        </div>
+        <div class="header__store">
+          <a href="" class="header__store--link">↳ 스토어</a>
+        </div>
+        <button class="header__m--btn"><span class="blind">메뉴토글</span></button>
+        <div class="header__gnb--m">
+          <div class="gnb--m">
+            <div class="gnb">
+              <ul class="gnb__list--m">
+                <li class="gnb__item--m">
+                  <a href="" class="gnb__link--m">
+                    <div class="gnb__hidden"><span class="gnb__text">신제품&추천제품</span></div>
+                  </a>
+                </li>
+                <li class="gnb__item--m">
+                  <a href="" class="gnb__link--m">
+                    <div class="gnb__hidden"><span class="gnb__text">스킨케어</span></div>
+                  </a>
+                </li>
+                <li class="gnb__item--m">
+                  <a href="" class="gnb__link--m">
+                    <div class="gnb__hidden"><span class="gnb__text">핸드&바디</span></div>
+                  </a>
+                </li>
+                <li class="gnb__item--m">
+                  <a href="" class="gnb__link--m">
+                    <div class="gnb__hidden"><span class="gnb__text">홈</span></div>
+                  </a>
+                </li>
+                <li class="gnb__item--m">
+                  <a href="" class="gnb__link--m">
+                    <div class="gnb__hidden"><span class="gnb__text">헤어</span></div>
+                  </a>
+                </li>
+                <li class="gnb__item--m">
+                  <a href="" class="gnb__link--m">
+                    <div class="gnb__hidden"><span class="gnb__text">향수</span></div>
+                  </a>
+                </li>
+                <li class="gnb__item--m">
+                  <a href="" class="gnb__link--m">
+                    <div class="gnb__hidden"><span class="gnb__text">키트&트래블</span></div>
+                  </a>
+                </li>
+                <li class="gnb__item--m">
+                  <a href="" class="gnb__link--m">
+                    <div class="gnb__hidden"><span class="gnb__text">읽기</span></div>
+                  </a>
+                </li>
+              </ul>
+              <div class="gnb__bottom">
+                <a href="" class="gnb__store">
+                  <div class="gnb__hidden"><span class="gnb__text">↳ 스토어</span></div>
+                </a>
+                <div class="gnb__corp">
+                  <div class="gnb__sns">
+                    <i class="ic-sns insta"><span class="blind">인스타그램</span></i>
+                    <i class="ic-sns twiter"><span class="blind">트위터</span></i>
+                    <i class="ic-sns linkedin"><span class="blind">linkedin</span></i>
+                    <i class="ic-sns kakao"><span class="blind">카카오채널</span></i>
+                  </div>
+                  <span class="gnb__corp--text">@Aesop</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header__dimmed"></div>
+  </header>
+
+  <main id="main" class="main">
+    <section class="visual">
+      <div class="visual__content">
+        <div class="visual__video">
+          <video src="./assets/videos/visual_video.mp4" autoplay preload="meta" muted="muted" loop="loop"></video>
+        </div>
+        <div class="visual__inner">
+          <div class="visual__top">
+            <span class="visual__hidden">
+              <div class="visual__text">
+                <div class="visual__wrap visual__wrap--mr uppercase">
+                  <span class="visual__title visual__title--over">Power</span>
+                  <span class="visual__title visual__title--under">Power</span>
+                </div>
+                <div class="visual__wrap visual__wrap--mr uppercase">
+                  <span class="visual__title visual__title--over">of</span>
+                  <span class="visual__title visual__title--under">of</span>
+                </div>
+              </div>
+            </span>
+            <span class="visual__hidden mr">
+              <div class="visual__text">
+                <div class="visual__wrap">
+                  <div class="visual__icon visual__icon--over">
+                    <i id="infinity-lottie" class="ic-infinity"></i>
+                    <i id="flower-lottie" class="ic-flower"></i>
+                    <i class="ic-earth"><img src="./assets/images/icon_earth.svg" alt="earth" class="visual__icon--img"></i>
+                  </div>
+                  <div class="visual__icon visual__icon--under">
+                    <i id="infinity-lottie2" class="ic-infinity"></i>
+                    <i id="flower-lottie2" class="ic-flower"></i>
+                    <i class="ic-earth"><img src="./assets/images/icon_earth.svg" alt="earth" class="visual__icon--img"></i>
+                  </div>
+                </div>
+                <div class="visual__wrap visual__wrap--ml uppercase">
+                  <span class="visual__title  visual__title--over">Nature</span>
+                  <span class="visual__title visual__title--under">Nature</span>
+                </div>
+              </div>
+            </span>
+          </div>
+          <div class="visual__bottom">
+            <div class="visual__desc">
+              <span class="visual__hidden">
+                <p class="desc uppercase">Aesop:</p>
+              </span>
+              <span class="visual__hidden">
+                <p class="desc uppercase">In Pursuit of Well-Being</p>
+              </span>
+            </div>
+            <div class="visual__more">
+              <a href="" class="visual__more--link">↳ 기프트 가이드</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro">
+      <h2 class="blind">intro</h2>
+      <div class="intro__inner">
+        <p class="intro__text">
+          ‘The manner of giving is worth more than the gift.’<br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, non?
+        </p>
+        <div class="intro__content">
+          <div class="intro__wrapper">
+            <div class="intro__video">
+              <img src="./assets/images/intro.avif" alt class="intro__img">
+              <button class="btn-play">Play video</button>
+            </div>
+          </div>
+          <div class="intro__desc">
+            <p class="intro__desc--normal">우수한 품질의 스킨, 헤어 그리고 바디 케어 제품을 만들어 내는 것이 변함없는 이솝의 목표입니다. 우리는 식물성 재료와 연구실에서 제조된 성분들을 공급하기 위해 폭넓은 조사를 하며, 반드시 효능과 안전성이 입증된 성분만을 사용합니다. 전문적인 지식을 가진 컨설턴트들은 각각 독특한 개성을 지닌 이솝 스토어에서 제품 레인지를 소개하고 적합한 제품 선택에 도움을 드립니다.</p>
+            <p class="intro__desc--big">—이솝은 세심하게 고안되어 효과적이면서도, 감각적인 즐거움을 선사하는 스킨, 헤어, 바디 케어 제품을 제공합니다.</p>
+          </div>
+        </div>
+      </div>
+      <div class="intro__modal">
+        <div class="modal">
+          <div class="modal__content">
+            <video src="./assets/videos/visual_video.mp4" class="modal__video"></video>
+            <button class="modal__close"><span class="blind">비디오 닫기</span></button>
+            <button class="modal__play"><span class="blind">비디오 재생</span></button>
+            <div class="modal__controls">
+              <div class="modal__controls--wrapper">
+                <div class="modal__time">
+                  <span class="modal__time--curr">00:00</span> / <span class="modal__time--total">00:00</span>
+                </div>
+                <button class="modal__mute">SOUND: <span class="modal__mute--status">ON</span></button>
+              </div>
+              <input type="range" value="0" min="0" max="100" id="seek-bar" class="modal__bar">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="skincare">
+      <div class="skincare__inner">
+        <h2 class="headline">
+          <div class="headline__text">
+            <span class="headline__split hidden">
+              <span class="headline__split--text headline__split--first uppercase">luxury</span>
+            </span>
+          </div>
+          <span class="headline__split hidden">
+            <div class="headline__split--wrap uppercase">
+              <span class="headline__split--text headline__split--over">skincare</span>
+              <span class="headline__split--text headline__split--under">skincare</span>
+            </div>
+          </span>
+        </h2>
+        <div class="skincare__offer">
+          <div class="offer">
+            <div class="offer__flex">
+              <div class="offer__left">
+                <span class="offer__title">[새로운 스킨 케어의 중심]</span>
+                <img class="offer__img" src="./assets/images/skincare.avif" alt>
+              </div>
+              <div class="offer__right">
+                <p class="offer__text offer__text--big split-line">
+                  이매큘레이트 페이셜 토닉 소개
+                </p>
+                <p class="offer__text offer__text--sm">스킨케어 루틴에서 중요한 단계인 토닝은 피부의 균형을 잡아주고 추가적인 보습에 앞서 피부를 준비해 줍니다. 토닉에는 풍부한 비타민이 함유되어 피부에 수분과 영양을 보충하고 부드럽게 각질을 제거합니다. 이매큘레이트 페이셜 토닉은 피부의 질감을 고르게 관리하여 피부 개선에 효과적입니다. 사용을 거듭할수록 피부를 고르게 관리해 줍니다.</p>
+                <a href="" class="offer__link">↳ <span class="more-text">자세히 보기</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="skincare__list">
+          <li class="skincare__item" data-img="./assets/images/skincare_img01.avif">
+            <a href="" class="skincare__link">
+              <span class="num">[ 01 ]</span>
+              <div class="skincare__wrapper">
+                <strong class="skincare__title">
+                  <span class="hidden">
+                    <span class="skincare__split--text skincare__title--sub">7분 독서</span>
+                  </span>
+                  <span class="hidden">
+                    <span class="skincare__split--text">피부를 세정하는 방법</span>
+                  </span>
+                </strong>
+                <p class="skincare__desc split-line">균형 잡힌 클렌징의 중요성</p>
+              </div>
+              <span class="skincare__more more-text">자세히 보기</span>
+            </a>
+          </li>
+          <li class="skincare__item" data-img="./assets/images/skincare_img02.jpg">
+            <a href="" class="skincare__link">
+              <span class="num">[ 02 ]</span>
+              <div class="skincare__wrapper">
+                <span class="skincare__title">
+                  <span class="hidden">
+                    <span class="skincare__split--text skincare__title--sub">7분 독서</span>
+                  </span>
+                  <span class="hidden">
+                    <span class="skincare__split--text">스킨 케어 루틴을 관리하는 방법</span>
+                  </span>
+                </span>
+                <p class="skincare__desc split-line">오롯이 스스로를 의식하는 순간</p>
+              </div>
+              <span class="skincare__more more-text">자세히 보기</span>
+            </a>
+          </li>
+          <li class="skincare__item" data-img="./assets/images/skincare_img03.jpg">
+            <a href="" class="skincare__link">
+              <span class="num">[ 03 ]</span>
+              <div class="skincare__wrapper">
+                <span class="skincare__title">
+                  <span class="hidden">
+                    <span class="skincare__split--text skincare__title--sub">5분 독서</span>
+                  </span>
+                  <span class="hidden">
+                    <span class="skincare__split--text">피부의 해부학과 생리학</span>
+                  </span>
+                </span>
+                <p class="skincare__desc split-line">이 글에서는 인체에서 가장 큰 기관인 피부의 주요 구조, 그 역할과 프로세스에 대해 자세하게 살펴보도록 하겠습니다.</p>
+              </div>
+              <span class="skincare__more more-text">자세히 보기</span>
+            </a>
+          </li>
+          <li class="skincare__item" data-img="./assets/images/skincare_img04.jpg">
+            <a href="" class="skincare__link">
+              <span class="num">[ 04 ]</span>
+              <div class="skincare__wrapper">
+                <span class="skincare__title">
+                  <span class="hidden">
+                    <span class="skincare__split--text skincare__title--sub">7분 독서</span>
+                  </span>
+                  <span class="hidden">
+                    <span class="skincare__split--text">피부의 수분 공급을 위한 가이드</span>
+                  </span>
+                </span>
+                <p class="skincare__desc split-line">스킨 케어에서 수분 공급이 중요한 이유</p>
+              </div>
+              <span class="skincare__more more-text">자세히 보기</span>
+            </a>
+          </li>
+        </ul>
+        <div class="skincare__floating">
+          <img src="" alt class="skincare__img">
+        </div>
+      </div>
+    </section>
+
+    <section class="vision">
+      <h2 class="blind">이솝 비전</h2>
+      <div class="vision__inner">
+        <div class="vision__wrap">
+          <div class="vision__background">
+            <img class="vision__background--img" src="./assets/images/vision.jpg" alt>
+          </div>
+          <div class="vision__logo"></div>
+          <div class="vision__content">
+            <span class="vision__text uppercase">
+              <span class="vision__text--wrap">
+                <span class="vision__split hidden">
+                  <span class="vision__split--text vision__split--first">Pure. Simple.</span>
+                </span>
+              </span>
+              <span class="vision__split hidden">
+                <div class="vision__split--wrap">
+                  <span class="vision__split--text vision__split--over">Effective.</span>
+                  <span class="vision__split--text vision__split--under">Effective.</span>
+                </div>
+              </span>
+            </span>
+            <ul class="vision__list">
+              <li class="vision__item">
+                <span class="vision__keyword">
+                  <span class="keyword hidden">
+                    <span class="keyword__text">Sustainability</span>
+                  </span>
+                </span>
+                <i class="vision__icon ic-spread"><img class="vision__icon--img" src="./assets/images/icon_spread.svg" alt></i>
+              </li>
+              <li class="vision__item">
+                <span class="vision__keyword">
+                  <span class="keyword hidden">
+                    <span class="keyword__text">balance between</span>
+                  </span>
+                  <span class="keyword hidden">
+                    <span class="keyword__text">nature and science</span>
+                  </span>
+                </span>
+                <i class="vision__icon ic-leaf"><img class="vision__icon--img" src="./assets/images/iicon_leaf_line.svg" alt></i>
+              </li>
+              <li class="vision__item">
+                <span class="vision__keyword">
+                  <span class="keyword hidden">
+                    <span class="keyword__text">respect for</span>
+                  </span>
+                  <span class="keyword hidden">
+                    <span class="keyword__text">cultural diversity</span>
+                  </span>
+                </span>
+                <i class="vision__icon ic-earth"><img class="vision__icon--img" src="./assets/images/icon_earth.svg" alt></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="new-product">
+      <div class="new-product__inner">
+        <div class="new-product__content">
+          <img src="./assets/images/new_product.avif" alt class="new-product__img">
+          <div class="new-product__keyword">
+            <div class="keyword">
+              <div class="keyword__wrap keyword__left keyword__top">
+                <span class="keyword__text">푸르른 기억</span>
+                <span class="keyword__text keyword__text--right keyword__text--space">휴가에서의 추억</span>
+              </div>
+              <div class="keyword__wrap keyword__right keyword__middle">
+                <span class="keyword__text">프레쉬</span>
+                <span class="keyword__text">비레레 오 드 퍼퓸</span>
+              </div>
+              <div class="keyword__wrap keyword__right keyword__bottom">
+                <span class="keyword__text--right keyword__text--space">신선하고</span>
+                <span class="keyword__text">싱그러운</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="store">
+      <div class="store__inner">
+        <h2 class="headline">
+          <div class="headline__text uppercase">
+            <span class="headline__split hidden">
+              <span class="headline__split--text headline__split--first ">aseop</span>
+            </span>
+          </div>
+          <span class="headline__split hidden uppercase">
+            <div class="headline__split--wrap">
+              <span class="headline__split--text headline__split--over">store</span>
+              <span class="headline__split--text headline__split--under">store</span>
+            </div>
+          </span>
+        </h2>
+        <div class="store__content">
+          <span class="store__title">[스토어와 공간]</span>
+          <div class="store__text">
+            <p class="store__text--big">새로운 스토어의 장소를 찾을 때 지역과 어울리지 않는 공간이 되기보다는, 그 지역의 거리 속 한 구성원으로 조화롭게 가치를 더하는 것이 이솝의 진정한 의의입니다. </p>
+            <p class="store__text--sm">이솝은 2003년 멜버른 베이사이드 교외의 세인트 킬다의 작은 지하 코너에 위치한 스토어에서 첫 고객을 맞이했습니다. 이곳은 지하 주차장으로 이어지는 좁은 비탈길에 위치한 작은 스토어였지만, 현재는 이솝 건축과 디자인의 기준점이 되었습니다. 이솝은 새로운 스토어의 장소를 찾을 때 이미 존재하는 것을 어떻게 활용하고 협력할 것인지 가장 먼저 염두에 둡니다. 장소의 과거와 현재 그리고 미래를 고려하며 조심스럽게 스토어 오픈을 계획합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product">
+      <div class="product__inner">
+        <h2 class="product__headline">추운 날씨의 동반자<br>핸드&바디:</h2>
+      </div>
+      <div class="product__content">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="product__num">[01]</div>
+              <a href="" class="product__link">
+                <span class="product__title">엘레오스 아로마틱 핸드 밤</span>
+                <div class="thumb">
+                  <img src="./assets/images/product01.avif" alt="엘레오스 아로마틱 핸드 밤" class="product__img">
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <div class="product__num">[02]</div>
+              <a href="" class="product__link beige">
+                <span class="product__title">레지렉션 아로마틱 핸드 밤</span>
+                <div class="thumb">
+                  <img src="./assets/images/product02.avif" alt="레지렉션 아로마틱 핸드 밤" class="product__img">
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <div class="product__num">[03]</div>
+              <a href="" class="product__link blue">
+                <span class="product__title">레비런스 아로마틱 핸드 밤</span>
+                <div class="thumb">
+                  <img src="./assets/images/product03.avif" alt="레비런스 아로마틱 핸드 밤" class="product__img">
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <div class="product__num">[04]</div>
+              <a href="" class="product__link">
+                <span class="product__title">제라늄 리프 바디 밤</span>
+                <div class="thumb">
+                  <img src="./assets/images/product04.avif" alt="제라늄 리프 바디 밤" class="product__img">
+                </div>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <div class="product__num">[05]</div>
+              <a href="" class="product__link beige">
+                <span class="product__title">레쥬비네이트 인텐시브바디 밤</span>
+                <div class="thumb">
+                  <img src="./assets/images/product05.webp" alt="레쥬비네이트 인텐시브바디 밤" class="product__img">
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="cursor">
+            <svg width="17" height="11" viewBox="0 0 17 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 5.5L16 5.5M16 5.5L11.5 1M16 5.5L11.5 10" stroke="#F3EFE8" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </div>
+        </div>
+        <a href="" class="product__link--more">↳ 바디케어 더보기</a>
+      </div>
+    </section>
+
+    <section class="sound">
+      <div class="sound__inner">
+        <h2 class="headline">
+          <div class="headline__text uppercase">
+            <span class="headline__split hidden">
+              <span class="headline__split--text headline__split--first ">sound of</span>
+            </span>
+          </div>
+          <span class="headline__split hidden uppercase">
+            <div class="headline__split--wrap">
+              <span class="headline__split--text headline__split--over">aesop</span>
+              <span class="headline__split--text headline__split--under">aesop</span>
+            </div>
+          </span>
+        </h2>
+        <div class="sound__content">
+          <span class="title">[라디오마티크]</span>
+          <div class="sound__text">
+            <p class="sound__desc">라디오마티크는 노래, 향기, 스토리텔링의 세계를 하나로 엮어 일상을 풍성하게 채워주는 청각적인 솔루션을 제공합니다.</p>
+            <p class="sound__desc">매장, 사무실, 온라인 공간에서 소리는 차분한 분위기를 조성하거나, 에너지를 북돋우거나, 호기심을 자극합니다. 이솝의 사운드 저장소 라디오마티크는 공간을 의미 있는 진동으로 채우기 위해 노력합니다. 이곳에서 플레이리스트, 믹스테이프, 미래 우화를 만나볼 수 있으며, 특별한 순간을 위한 분위기를 연출할 수 있도록 구성되어 있습니다.</p>
+            <a href="" class="sound__link">↳ <span class="more-text">자세히 보기</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="laboratory">
+      <h2 class="blind">공장이미지</h2>
+      <div class="laboratory__inner">
+        <div class="laboratory__content">
+          <div class="laboratory__background">
+            <img src="./assets/images/laboratory.jpg" alt class="laboratory__img">
+          </div>
+          <div class="laboratory__logo"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="outro">
+      <div class="outro__inner">
+        <div class="outro__content">
+          <div class="outro__left">
+            <i class="outro__icon ic--infinity"><img src="./assets/images/icon_infinity_circle.svg" alt></i>
+            <i class="outro__icon ic-leaf"><img src="./assets/images/icon_leaf_black.svg" alt></i>
+            <i class="outro__icon ic-earth"><img src="./assets/images/icon_earth_black.svg" alt></i>
+          </div>
+          <div class="outro__text">
+            <p class="outro__desc split-line">—
+              풍성한 온라인 경험을 위한 사려 깊은 제스처</p>
+            <a href="" class="outro__link">↳ <span class="more-text">자세히 보기</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div class="footer__left">
+          <div class="footer__um">
+            <div class="footer__sns">
+              <div class="sns">
+                <a href="" class="sns__link"><i class="sns__icon"><img class="sns__img" src="./assets/images/icon_insta.svg" alt="insta"></i></a>
+                <a href="" class="sns__link"><i class="sns__icon"><img class="sns__img" src="./assets/images/icon_twiter.svg" alt="twiter"></i></a>
+                <a href="" class="sns__link"><i class="sns__icon"><img class="sns__img" src="./assets/images/icon_linkedin.svg" alt="linkedin"></i></a>
+                <a href="" class="sns__link"><i class="sns__icon kakao"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="footer__form">
+            <span class="footer__desc">제품, 서비스, 스토어, 이벤트, 문화적 관심사 등 다양한 소식을 받아보실 수 있도록 이솝 이메일을 구독하세요.</span>
+            <label for="emailbox">Email*</label>
+            <div class="footer__form--email">
+              <input type="email" id="emailbox" class="footer__email">
+              <span class="footer__form--icon">↳</span>
+            </div>
+          </div>
+        </div>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="" class="footer__link">신제품&추천 제품</a>
+            <div class="footer__sitemap">
+              <ul class="sitemap__list">
+                <li class="sitemap__item sitemap__item--title">신제품</li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">비레레 오 드 퍼퓸</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">엘레오스 아로마틱 핸드 밤</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">이매큘레이트 페이셜 토닉</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">프로텍티브 페이셜 로션 SPF50+</a>
+                </li>
+                <li class="sitemap__item sitemap__item--title">추천 제품</li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">제라늄 리프 바디 클렌저</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">올루스 아로마틱 룸 스프레이</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">테싯 오 드 퍼퓸</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">파슬리 씨드 안티 옥시던트 인텐스 세럼</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">스킨케어</a>
+            <div class="footer__sitemap">
+              <ul class="sitemap__list">
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">스킨 케어 더 보기</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">페이셜 클렌저 & 각질 제거</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">트리트먼트 & 마스크</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">토너</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">하이드레이터 & 모이스처라이저</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">립 & 아이</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">쉐이빙</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">선 케어</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">스킨 케어 키트</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">핸드&바디</a>
+            <div class="footer__sitemap">
+              <ul class="sitemap__list">
+                <li class="sitemap__item sitemap__item--more">
+                  <a href="" class="sitemap__link">핸드 & 바디 더 보기</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">핸드 워시 & 밤</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">바 솝</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">바디 클렌저 & 스크럽</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">바디 밤 & 오일</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">데오도란트</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">홈</a>
+            <div class="footer__sitemap">
+              <ul class="sitemap__list">
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">홈 더 보기</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">룸 스프레이</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">인센스</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">캔들</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">오일 버너 블렌드</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">디자인 오브제</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">탈취제 & 반려동물</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">헤어</a>
+            <div class="footer__sitemap">
+              <ul class="sitemap__list">
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">헤어 더 보기</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">샴푸 & 컨디셔너</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">헤어 트리트먼트</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">그루밍</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">향수</a>
+            <div class="footer__sitemap">
+              <ul class="sitemap__list">
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">향수 더 보기</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">플로럴</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">프레쉬</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">우디</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">오퓰런트</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">키트&트래블</a>
+            <div class="footer__sitemap">
+              <ul class="sitemap__list">
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">키트 & 트래블 더 보기</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">시즈널 기프트 키트</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">스킨 케어 키트</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">핸드 & 바디 케어 키트</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">트래블</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="footer__item">
+            <a href="" class="footer__link">읽기</a>
+            <div class="footer__sitemap">
+              <ul class="sitemap__list">
+                <li class="sitemap__item sitemap__item--title">더 아테네움</li>
+                <li class="sitemap__item"><a href="" class="sitemap__link">모두보기</a></li>
+                <li class="sitemap__item sitemap__item--title">회사 소개</li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">브랜드 스토리</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">채용</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">이솝 재단</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">문의하기</a>
+                </li>
+                <li class="sitemap__item sitemap__item--title">철학</li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">디자인</a>
+                </li>
+                <li class="sitemap__item">
+                  <a href="" class="sitemap__link">제품</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div class="footer__right">
+          <a href="" class="footer__store">스토어</a>
+          <span class="footer__copy">©Aesop</span>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__logo"></div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,1346 @@
+.visual {
+  color: #fff;
+  clip-path: circle(0% at 50% 50%);
+  &__content {
+    position: relative;
+  }
+  &__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+  }
+  &__video {
+    video {
+      width: 100%;
+      height: 100vh;
+      object-fit: cover;
+    }
+  }
+  &__top {
+    position: relative;
+    top: 0;
+    transform: translateY(6vw);
+    padding: 0 1.4vw;
+    @include tablet {
+      transform: translateY(11.5vw);
+      padding: 0 1.95vw;
+    }
+    @include mobile {
+      transform: translateY(80px);
+      padding: 0 1.83vw;
+    }
+  }
+  &__hidden {
+    display: block;
+    overflow: hidden;
+    &.mr {
+      margin-top: 1.56vw;
+    }
+  }
+  &__text {
+    display: flex;
+    justify-content: center;
+    color: rgba($color: #fff, $alpha: 0.9);
+  }
+  &__wrap {
+    position: relative;
+  }
+  &__title {
+    display: block;
+    font-size: 14vw;
+    font-weight: 700;
+    line-height: 1;
+    margin: -1.7vw 0;
+    @include tablet {
+      font-size: 11.72vw;
+      margin: -1.3vw 0;
+    }
+    @include mobile {
+      font-size: 14.34vw;
+    }
+    &--under {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__icon {
+    display: flex;
+    gap: 0.52vw;
+    @include mobile {
+      display: none;
+    }
+    .ic-infinity {
+      width: 102px;
+      height: 50px;
+      svg>g {
+        transform-origin: center;
+        transform: scale(1.85);
+      }
+    }
+    .ic-flower {
+      width: 50px;
+      height: 50px;
+      svg>g {
+        transform-origin: center;
+        transform: scale(1.9);
+      }
+    }
+    &--under {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &--img {
+      height: 50px;
+    }
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 0 1.4vw 1.8vw;
+    @include tablet {
+      padding: 0 1.95vw 2.93vw;
+    }
+  }
+  &__desc {
+    display: block;
+    font-size: 3.2vw;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 0.8;
+    color: rgba($color: #fff, $alpha: 0.9);
+    @include tablet {
+      font-size: 4.49vw;
+    }
+    @include mobile {
+      font-size: 3vw;
+    }
+    @include mobile-sm {
+      font-size: 16px;
+    }
+  }
+  &__more {
+    opacity: 1;
+    &--link {
+      border: 1px solid #fff;
+      border-radius: 0.31vw;
+      padding: 1.5vw 3.44vw;
+      font-size: 1.1vw;
+      transition: background 0.3s;
+      @include tablet {
+        padding: 1.95vw 5.86vw;
+        font-size: 1.56vw;
+      }
+      @include mobile {
+        font-size: 2vw;
+      }
+      @include mobile-sm {
+        font-size: 14px;
+        white-space: nowrap;
+      }
+      &:hover {
+        background: rgba($color: #fff, $alpha: 0.4);
+        transition: background 0.3s;
+      }
+    }
+  }
+}
+
+.intro {
+  &__inner {
+    padding: 6.61vw 1.41vw 9.32vw;
+    @include tablet {
+      padding: 8.20vw 1.95vw 13.09vw;
+    }
+    @include mobile {
+      padding: 64px 14px 83px;
+    }
+  }
+  &__text {
+    font-size: 30px;
+    line-height: 1.14;
+    letter-spacing: -0.1vw;
+    // text-align: justify;
+    word-break: keep-all;
+    margin-bottom: 3.54vw;
+    line-height: 1.6;
+    opacity: 1;
+    text-align: center;
+    padding: 50px 0 80px;
+    @include tablet {
+      font-size: 4.6vw;
+      line-height: 1.2;
+      margin-bottom: 4.98vw;
+    }
+    @include mobile {
+      font-size: 3.5vw;
+    }
+    @include mobile-sm {
+      font-size: 16px;
+    }
+  }
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    width: 29vw;
+    opacity: 1;
+    word-break: keep-all;
+    @include mobile {
+      width: 100%;
+    }
+    &--normal {
+      // font-size: 1.2vw;
+      font-size: 14px;
+      line-height: 1.9;
+      margin-bottom: 3.44vw;
+      // line-height: 1.22;
+      // text-align: justify;
+      @include tablet {
+        font-size: 2vw;
+        text-align: left;
+      }
+      @include mobile {
+        width: 60%;
+        margin-left: auto;
+        font-size: 18px;
+      }
+      @include mobile-sm {
+        font-size: 14px;
+      }
+    }
+    &--big {
+     font-size: 22px;
+    line-height: 1.6;
+    letter-spacing: -1px;
+      @include tablet {
+        font-size: 4vw;
+        text-align: left;
+      }
+      @include mobile-sm {
+        font-size: 18px;
+      }
+    }
+  }
+  &__content {
+    display: flex;
+    @include mobile {
+      flex-direction: column;
+    }
+  }
+  &__wrapper {
+    perspective: 1000px;
+  }
+  &__video {
+    position: relative;
+    transform-origin: top;
+    transform: rotateX(0deg);
+    width: 32.8vw;
+    height: 19.8vw;
+    margin: 0 9.69vw 0 6.93vw;
+    border-radius: 0.52vw;
+    overflow: hidden;
+    @include tablet {
+      width: 46.09vw;
+      height: 28.03vw;
+      margin: 0 13.57vw 0 9vw;
+      border-radius: 0.78vw;
+    }
+    @include mobile {
+      width: 100%;
+      height: 55vw;
+      margin: 0 0 50px 0;
+      border-radius: 1.04vw;
+    }
+    @include mobile-sm {
+      margin-bottom: 30px;
+    }
+    .btn-play {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 1.04vw;
+      left: 1.04vw;
+      color: #fff;
+      @include mobile {
+        bottom: 20px;
+        left: 20px;
+        font-size: 14px;
+      }
+      &::before {
+        content: '';
+        width: 1.77vw;
+        height: 1.77vw;
+        border-radius: 50%;
+        background: #fffef2;
+        margin-right: 0.52vw;
+        @include mobile {
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+        }
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0.73vw;
+        transform: translateY(-50%);
+        border-top: 0.31vw solid transparent;
+        border-left: 0.47vw solid #000;
+        border-bottom: 0.31vw solid transparent;
+        @include mobile {
+          left: 8px;
+          border-top-width: 5px;
+          border-left-width: 6px;
+          border-bottom-width: 5px;
+        }
+      }
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2) translateY(12%);
+  }
+  &__modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: #000;
+    .modal {
+      &__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      &__video {
+        height: 100%;
+        object-fit: contain;
+      }
+      &__close {
+        display: block;
+        position: absolute;
+        top: 1.67vw;
+        right: 1.67vw;
+        width: 3.33vw;
+        height: 3.33vw;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        @include tablet {
+          top: 2.34vw;
+          right: 2.34vw;
+          width: 4.69vw;
+          height: 4.69vw;
+        }
+        @include mobile {
+          top: 4.3vw;
+          right: 4.3vw;
+          width: 8.74vw;
+          height: 8.74vw;
+        }
+        &::before, &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%) rotate(45deg);
+          width: 1.56vw;
+          height: 1px;
+          background: #fff;
+          @include tablet {
+            width: 2.2vw;
+          }
+          @include mobile {
+            width: 3.91vw;
+          }
+        }
+        &::after {
+          transform: translate(-50%, -50%) rotate(-45deg);
+        }
+      }
+      &__play {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #fff;
+        &::after {
+          content: '';
+          width: 10px;
+          height: 10px;
+          margin-left: 4px;
+          background: url('../images/icon_play.svg') no-repeat 0 0 / 100%;
+        }
+      }
+      &__controls {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 25px 20px;
+        &--wrapper {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 5px;
+          font-size: 10px;
+          color: #fff;
+        }
+      }
+      &__bar {
+        appearance: none;
+        width: 100%;
+        height: 2px;
+        background: rgba($color: #fff, $alpha: 0.6);
+        outline: none;
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          appearance: none;
+          width: 0;
+          height: 0;
+        }
+      }
+    } // modal
+  }
+}
+
+.skincare {
+  background: $sub-color;
+  border-top: 1px solid #ded9d2;
+  &__inner {
+    padding: 7.7vw 1.4vw 8.2vw;
+    @include tablet {
+      padding: 10.84vw 1.95vw 11.52vw;
+    }
+    @include mobile {
+      padding: 82px 14px 87px;
+    }
+  }
+  &__offer {
+    padding-bottom: 8.3vw;
+    .offer {
+      &__flex {
+        display: flex;
+        @include mobile {
+          flex-direction: column;
+        }
+      }
+      &__left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+        @include tablet {
+          flex: 3;
+        }
+        @include mobile {
+          margin-bottom: 50px;
+        }
+        @include mobile-sm {
+          margin-bottom: 30px;
+        }
+      }
+      &__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
+      }
+      &__title {
+        // font-family: 'S-CoreDream';
+        font-size: 0.8vw;
+        margin-bottom: 3vw;
+        @include tablet {
+          font-size: 1.17vw;
+        }
+        @include mobile {
+          font-size: 14px;
+        }
+        @include mobile-sm {
+          font-size: 12px;
+        }
+      }
+      &__img {
+        width: 31vw;
+        height: 19.79vw;
+        object-fit: cover;
+        @include tablet {
+          width: 43.75vw;
+          height: 29vw;
+        }
+        @include mobile {
+          width: 100%;
+          height: 56.19vw;
+        }
+      }
+      &__text {
+        &--big {
+          // font-family: 'S-CoreDream';
+          font-size: 1.9vw;
+          font-weight: 400;
+          line-height: 1.14;
+          letter-spacing: -0.10vw;
+          margin-bottom: 1.46vw;
+          width: 41.7vw;
+          @include tablet {
+            font-size: 2.8vw;
+          }
+          @include mobile {
+            width: 100%;
+            font-size: 22px;
+            margin-bottom: 20px;
+          }
+          @include mobile-sm {
+            font-size: 18px;
+          }
+        }
+        &--sm {
+          width: 33.4vw;
+          margin-bottom: 3.4vw;
+          font-size: 1.3vw;
+          text-indent: 2em;
+          line-height: 1.2;
+          letter-spacing: -0.05vw;
+          text-align: justify;
+          word-break: keep-all;
+          @include tablet {
+            font-size: 1.8vw;
+            text-align: left;
+          }
+          @include mobile {
+            width: 100%;
+            margin-bottom: 20px;
+            font-size: 16px;
+          }
+          @include mobile-sm {
+            font-size: 14px;
+          }
+        }
+      }
+      &__link {
+        font-size: 1.1vw;
+        @include tablet {font-size: 1.56vw;}
+        @include mobile {font-size: 16px;}
+        @include mobile-sm {font-size: 14px;}
+      }
+    }
+  }
+  &__list {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    border-top: 1px solid rgba($color: #333, $alpha: 0.3);
+    border-bottom: 1px solid rgba($color: #333, $alpha: 0.3);
+    mix-blend-mode: difference;
+    @include mobile {
+      color: #333;
+      mix-blend-mode: normal;
+    }
+  }
+  &__item {
+    padding: 3.91vw 0;
+    @include mobile {
+      padding: 5.22vw 0;
+    }
+    & + & {
+      border-top: 1px solid rgba($color: #333, $alpha: 0.3);
+    }
+  }
+  &__link {
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.14;
+    .num {
+      // font-family: 'S-CoreDream', sans-serif;
+      font-size: 0.6vw;
+      font-weight: 400;
+      width: 10.3vw;
+      opacity: 0;
+      white-space: nowrap;
+      @include tablet {
+        font-size: 1vw;
+      }
+      @include mobile {
+        font-size: 10px;
+      }
+    }
+  }
+  &__wrapper {
+    display: flex;
+    @include mobile {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  &__title {
+    width: 39.8vw;
+    margin-right: 1.4vw;
+    font-size: 1.9vw;
+    letter-spacing: -0.05vw;
+    @include tablet {
+      font-size: 2.8vw;
+    }
+    @include mobile {
+      font-size: 14px;
+    }
+    &--sub {
+    // font-family: 'S-CoreDream', sans-serif;
+      font-size: 1vw;
+      @include tablet {
+        font-size: 1.5vw;
+      }
+      @include mobile {
+        font-size: 10px;
+      }
+    }
+  }
+  &__split--text {
+    display: block;
+  }
+  &__desc {
+    font-size: 1.3vw;
+    width: 20vw;
+    @include tablet {
+      font-size: 1.8vw;
+    }
+    @include mobile {
+      width: 90%;
+      font-size: 11px;
+    }
+  }
+  &__more {
+    position: relative;
+    font-size: 1.1vw;
+    text-align: right;
+    margin-left: auto;
+    white-space: nowrap;
+    @include tablet {
+      font-size: 1.3vw;
+    }
+    @include mobile {
+      font-size: 12px;
+    }
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      transform: scaleX(0);
+      transform-origin: right;
+      background: #fff;
+      transition: transform 0.3s;
+    }
+    &:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  }
+  &__floating {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 20.83vw;
+    height: 11.67vw;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity .5s;
+    pointer-events: none;
+    @include tablet {
+      width: 26.83vw;
+      height: 17.67vw;
+    }
+    @include mobile {
+      display: none;
+    }
+    &.on {
+      opacity: 1;
+      .skincare__img {transform: scale(1);}
+    }
+  }
+  &__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.1);
+    transition: all .5s;
+  }
+}
+
+.vision {
+  background: $sub-color;
+  &__inner {
+    padding: 1.67vw;
+    @include tablet {
+      padding: 1.95vw;
+    }
+    @include mobile {
+      padding: 1.83vw;
+    }
+  }
+  &__wrap {
+    position: relative;
+    perspective: 1000px;
+  }
+  &__background {
+    transform-origin: top;
+    transform: rotateX(0);
+    overflow: hidden;
+    border-radius: 0.68vw;
+    @include tablet {
+      border-radius: 0.78vw;
+    }
+    @include mobile {
+      height: 70vw;
+    }
+    &--img {
+      width: 100%;
+      height: 100%;
+      transform: scale(1.2) translate(0, -5.21vw);
+      object-fit: cover;
+    }
+  }
+  &__logo {
+    position: absolute;
+    top: 2.60vw;
+    left: 3.13vw;
+    width: 4.69vw;
+    height: 1.56vw;
+    mask: url('../images/logo.svg') no-repeat 0 0 / 100%;
+    -webkit-mask: url('../images/logo.svg') no-repeat 0 0 / 100%;
+    background: #fff;
+    @include tablet {
+      width: 8.79vw;
+      height: 2.93vw;
+    }
+  }
+  &__content {
+    position: absolute;
+    bottom: 2.60vw;
+    right: 3.13vw;
+    width: 45.3vw;
+    color: #f8f8f8;
+    @include tablet {
+      width: 50vw;
+    }
+    @include mobile {
+      bottom: 10px;
+      left: 0;
+      right: auto;
+      width: 100%;
+      padding: 0 10px;
+    }
+    @include mobile-sm {
+      padding: 0 5px;
+    }
+  }
+  &__text {
+    display: block;
+    font-size: 6.3vw;
+    line-height: 1;
+    font-weight: 700;
+    margin-bottom: 6.8vw;
+    @include tablet {
+      font-size: 7vw;
+    }
+    @include mobile {
+      margin-bottom: 13.04vw;
+    }
+    &--wrap {
+      display: block;
+      transform: translateY(100%);
+    }
+  }
+  &__split {
+    &--wrap {
+      position: relative;
+      transform: translateY(100%);
+    }
+    &--text {
+      display: block;
+    }
+    &--under {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 0.73vw;
+    @include tablet {
+      gap: 0 0.98vw;
+    }
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1.04vw 0.68vw;
+    height: 9.7vw;
+    border-radius: 0.42vw;
+    border: 1px solid #f8f8f8;
+    flex: 1;
+    scale: 0;
+    @include mobile {
+      padding: 10px;
+      height: auto;
+    }
+    @include mobile-sm {
+      padding: 5px;
+    }
+  }
+  &__keyword {
+    font-size: 1.1vw;
+    line-height: 1.14;
+    @include tablet {
+      font-size: 1.2vw;
+    }
+    @include mobile {
+      font-size: 12px;
+    }
+    @include mobile-sm {
+      font-size: 10px;
+    }
+    .keyword {
+      &__text {
+        display: block;
+      }
+    }
+  }
+  &__icon {
+    align-self: flex-end;
+    width: 2.60vw;
+    height: 2.60vw;
+    scale: 0;
+    @include tablet {
+      width: 2.8vw;
+      height: 2.8vw;
+    }
+    @include mobile {
+      width: 20px;
+      height: 20px;
+    }
+    @include mobile-sm {
+      width: 15px;
+      height: 15px;
+      margin-top: 10px;
+    }
+    &--img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.new-product {
+  background: $sub-color;
+  overflow: hidden;
+  &__inner {
+    padding: 5vw 1.67vw;
+    @include tablet {
+      padding: 7.81vw 1.95vw;
+    }
+    @include mobile {
+      padding: 40px 14px;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+  }
+  &__img {
+    width: 40.2vw;
+    @include mobile-sm {
+      width: 200px;
+    }
+  }
+  &__keyword {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    .keyword {
+      &__wrap {
+        position: absolute;
+        // font-family: 'S-CoreDream';
+        font-size: 3.2vw;
+        font-weight: 400;
+        letter-spacing: -0.05vw;
+        color: #fff;
+        mix-blend-mode: difference;
+        @include mobile-sm {
+          font-size: 13px;
+        }
+      }
+      &__top {
+        top: 2.4vw;
+        left: 6.77vw;
+        @include mobile-sm {
+          left: 0px;
+        }
+      }
+      &__middle {
+        bottom: 19.69vw;
+        right: 12.24vw;
+        @include mobile-sm {
+          right: 0;
+        }
+      }
+      &__bottom {
+        bottom: 1.42vw;
+        right: 20.83vw;
+        @include mobile-sm {
+          right: 30px;
+        }
+      }
+      &__text {
+        display: block;
+        line-height: 1;
+        &--right {
+          text-align: right;
+        }
+        &--space {
+          margin-left: 6.25vw;
+        }
+      }
+    }
+  }
+}
+
+.store {
+  &__inner {
+    padding: 7.7vw 1.4vw 8.2vw;
+    @include tablet {
+      padding: 10.84vw 1.95vw 11.52vw;
+    }
+    @include mobile {
+      padding: 69px 14px;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: flex-start;
+  }
+  &__title {
+    flex: 1;
+    // font-family: "S-CoreDream", sans-serif;
+    font-size: 0.6vw;
+    opacity: 0;
+    @include tablet {
+      font-size: 1.17vw;
+    }
+    @include mobile {
+      font-size: 14px;
+    }
+    @include mobile-sm {
+      font-size: 12px;
+    }
+  }
+  &__text {
+    flex: 1;
+    @include mobile {
+      flex: 2;
+    }
+    &--big {
+      width: 41.7vw;
+      margin-bottom: 2.6vw;
+      font-size: 2vw;
+      line-height: 1.14;
+      letter-spacing: -0.1vw;
+      text-align: justify;
+      opacity: 0;
+      @include tablet {
+        font-size: 3vw;
+      }
+      @include mobile {
+        width: 100%;
+        font-size: 18px;
+      }
+      @include mobile-sm {
+        font-size: 12px;
+      }
+    }
+    &--sm {
+      width: 31.3vw;
+      font-size: 1.3vw;
+      text-indent: 2em;
+      line-height: 1.2;
+      letter-spacing: -0.05vw;
+      text-align: justify;
+      word-break: keep-all;
+      opacity: 0;
+      @include tablet {
+        width: 40vw;
+        font-size: 1.8vw;
+      }
+      @include mobile {
+        width: 100%;
+        font-size: 18px;
+      }
+      @include mobile-sm {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.product {
+  &__inner {
+    padding: 1.67vw 1.41vw 3.54vw;
+    @include tablet {
+      padding: 2.34vw 1.95vw 4.98vw;
+    }
+    @include mobile {
+      padding: 4.3vw 1.83vw 5.35vw;
+    }
+  }
+  &__headline {
+    // font-family: 'S-CoreDream';
+    font-size: 3vw;
+    line-height: 1.14;
+    letter-spacing: -0.05vw;
+    @include tablet {
+      font-size: 3.7vw;
+    }
+    @include mobile {
+      font-size: 22px;
+    }
+  }
+  &__content {
+    padding-bottom: 8.23vw;
+    @include tablet {
+      padding-bottom: 11.52vw;
+    }
+  }
+  .swiper {
+    &-wrapper {
+      transition-timing-function: linear;
+    }
+    &-slide {
+      width: 39.5vw;
+      padding: 0 0.52vw;
+      @include tablet {
+        width: 47vw;
+        padding: 0 0.98vw;
+      }
+      @include mobile {
+        width: 39.11vw;
+      }
+    }
+    .cursor {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      z-index: 10;
+      transform: translate(-50%, -50%);
+      width: 6.5vw;
+      height: 6.5vw;
+      border-radius: 50%;
+      background: #333;
+      pointer-events: none;
+      opacity: 0;
+      transition: transform .3s, opacity .3s;
+      @include tablet {
+        width: 8vw;
+        height: 8vw;
+      }
+      @include mobile {
+        display: none;
+      }
+    }
+  }
+  &__link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.26vw;
+    height: 100%;
+    padding: 9.48vw 0 4.17vw;
+    background: #333;
+    color: #fff;
+    @include tablet {
+      border-radius: 0.49vw;
+    }
+    @include mobile {
+      padding: 5.22vw 5px 2.61vw;
+    }
+    &.beige {
+      background: #f2eee8;
+      color: #333;
+    }
+    &.blue {
+      background: #cbcbd1;
+      color: #333;
+    }
+    &--more {
+      display: block;
+      padding-left: 2.45vw;
+      margin-top: 0.52vw;
+      font-size: 1vw;
+      letter-spacing: -0.05vw;
+      @include tablet {
+        font-size: 1.4vw;
+      }
+      @include mobile {
+        margin-top: 10px;
+        font-size: 11px;
+      }
+    }
+  }
+  &__num {
+    display: block;
+    // font-family: "S-CoreDream", sans-serif;
+    font-size: 0.6vw;
+    line-height: 0.8;
+    padding: 0.52vw 0;
+    @include tablet {
+      font-size: 1vw;
+    }
+    @include mobile {
+      font-size: 8px;
+      padding: 10px 0;
+    }
+  }
+  &__title {
+    font-size: 1.1vw;
+    letter-spacing: -0.05vw;
+    text-align: center;
+    margin-bottom: 5.21vw;
+    @include tablet {
+      font-size: 1.5vw;
+    }
+    @include mobile {
+      font-size: 11px;
+    }
+  }
+  &__img {
+    display: flex;
+    align-items: center;
+    height: 34.48vw;
+    @include tablet {
+      height: 50vw;
+    }
+    @include mobile {
+      height: 39.11vw;
+    }
+  }
+}
+
+.sound {
+  &__inner {
+    padding: 7.7vw 1.4vw 8.2vw;
+    @include tablet {
+      padding: 10.84vw 1.95vw 11.52vw;
+    }
+    @include mobile {
+      padding: 69px 14px;
+    }
+  }
+  &__content {
+    display: flex;
+    opacity: 0;
+    .title {
+      // font-family: 'S-CoreDream';
+      flex: 1;
+      @include tablet {
+        font-size: 1.17vw;
+      }
+      @include mobile {
+        font-size: 14px;
+      }
+      @include mobile-sm {
+        font-size: 12px;
+      }
+    }
+  }
+  &__text {
+    flex: 1;
+    @include mobile {
+      flex: 2;
+    }
+  }
+  &__desc {
+    width: 31vw;
+    margin-bottom: 2.19vw;
+    font-size: 1.2vw;
+    text-indent: 2em;
+    line-height: 1.2;
+    text-align: justify;
+    word-break: keep-all;
+    @include tablet {
+      width: 40vw;
+      font-size: 1.8vw;
+      text-align: left;
+    }
+    @include mobile {
+      width: 100%;
+      font-size: 18px;
+    }
+    @include mobile-sm {
+      font-size: 12px;
+    }
+  }
+  &__link {
+    font-size: 1.1vw;
+    @include tablet {
+      font-size: 1.4vw;
+    }
+    @include mobile {
+      font-size: 16px;
+    }
+    @include mobile-sm {
+      font-size: 12px;
+    }
+  }
+}
+
+.laboratory {
+  background: $sub-color;
+  padding: 1.67vw;
+  @include tablet {
+    padding: 1.95vw;
+  }
+  @include mobile {
+    padding: 14px;
+  }
+  &__content {
+    position: relative;
+    perspective: 1000px;
+  }
+  &__background {
+    transform-origin: top;
+    transform: rotateX(0);
+    border-radius: 0.68vw;
+    overflow: hidden;
+    @include mobile {
+      height: 70vw;
+    }
+  }
+  &__img {
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1.2) translateY(-5.21vw);
+  }
+  &__logo {
+    position: absolute;
+    top: 2.60vw;
+    left: 3.13vw;
+    width: 4.69vw;
+    height: 3.13vw;
+    mask: url('../images/logo.svg') no-repeat 0 0 / 100%;
+    -webkit-mask: url('../images/logo.svg') no-repeat 0 0 / 100%;
+    background: #fff;
+    @include tablet {
+      width: 8.79vw;
+      height: 2.93vw;
+    }
+  }
+}
+
+.outro {
+  &__inner {
+    padding: 3.44vw 9.69vw 8.33vw;
+    @include mobile {
+      padding: 69px 14px;
+    }
+  }
+  &__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 4.17vw;
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      transform: scaleX(var(--before-scale-x, 0));
+      background: rgba($color: #000000, $alpha: 0.3)
+    }
+  }
+  &__left {
+    display: flex;
+    gap: 0.21vw;
+  }
+  &__icon {
+    @include tablet {
+      width: 50px;
+      height: 50px;
+    }
+    @include mobile {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &__text {
+    width: 42vw;
+  }
+  &__desc {
+    font-size: 4.7vw;
+    line-height: 1.14;
+    letter-spacing: -0.1vw;
+    margin-bottom: 2.08vw;
+    @include mobile {
+      font-size: 30px;
+    }
+    @include mobile-sm {
+      font-size: 20px;
+    }
+  }
+  &__link {
+    font-size: 1.1vw;
+    @include tablet {
+      font-size: 1.4vw;
+    }
+    @include mobile {
+      font-size: 16px;
+    }
+    @include mobile-sm {
+      font-size: 14px;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
